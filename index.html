@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Emojis HTML | EnSticker </title>
+    <title> Unicode HTML | EnSticker </title>
     <style>
       #tabla-container {
         overflow-x: auto;
@@ -123,9 +123,9 @@ nav a:hover {
 
     <script>
       function copyToClipboard(text) {
-        navigator.clipboard.writeText(text);
+        navigator.clipboard.writeText("&#x" + text);
         var message = document.getElementById("message");
-        message.innerHTML = text;
+        message.innerHTML = "&#x" + text;
         message.style.display = "block";
         setTimeout(function() {
           message.style.display = "none";
@@ -138,7 +138,7 @@ nav a:hover {
     
     <nav>
   <ul>
-    <li><a href="#">Emojis</a></li>
+    <li><a href="#">Emoji</a></li>
     <li><a href="http://ensticker.endigitaluy.online">EnSticker</a></li>
     <li><a href="http://endigitaluy.online">EnDigitalUY</a></li>
   </ul>
@@ -147,350 +147,536 @@ nav a:hover {
     <table class="responsive-table">
   <tbody>
    <tr>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F600')">😀</button></td>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F601')">😁</button></td>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F602')">😂</button></td>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F923')">🤣</button></td>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F603')">😃</button></td>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F604')">😄</button></td>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F605')">😅</button></td>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F606')">😆 </button></td>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F609')">😉</button></td>
-      <td><button id="Click" onclick="copyToClipboard('&#x1F60A')">😊</button></td>
+   <td><button id="Click" onclick="copyToClipboard('1F600;')">😀</button></td>
+      <td><button id="Click" onclick="copyToClipboard('1F601;')">😁</button></td>
+      <td><button id="Click" onclick="copyToClipboard('1F602;')">😂</button></td>
+      <td><button id="Click" onclick="copyToClipboard('1F923;')">🤣</button></td>
+      <td><button id="Click" onclick="copyToClipboard('1F603;')">😃</button></td>
+      <td><button id="Click" onclick="copyToClipboard('1F604;')">😄</button></td>
+      <td><button id="Click" onclick="copyToClipboard('1F605;')">😅</button></td>
+      <td><button id="Click" onclick="copyToClipboard('1F606;')">😆 </button></td>
+      <td><button id="Click" onclick="copyToClipboard('1F609;')">😉</button></td>
+      <td><button id="Click" onclick="copyToClipboard('1F60A;')">😊</button></td>
     </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F60B')">😋</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F60E')">😎</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F60D')">😍</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F618')">😘</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F617')">😗</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F619')">😙</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61A')">😚</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x263A')">☺️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F642')">🙂</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F914')">🤔</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F60B;')">😋</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F60E;')">😎</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F60D;')">😍</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F618;')">😘</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F617;')">😗</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F619;')">😙</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F61A;')">😚</button></td>
+    <td><button id="Click" onclick="copyToClipboard('263A;')">☺️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F642;')">🙂</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F914;')">🤔</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F610')">😐</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F611')">😑</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F636')">😶</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F60F')">😏</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F623')">😣</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F625')">😥</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F62E')">😮</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F910')">🤐</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F62F')">😯</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F62A')">😪</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F610;')">😐</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F611;')">😑</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F636;')">😶</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F60F;')">😏</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F623;')">😣</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F625;')">😥</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F62E;')">😮</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F910;')">🤐</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F62F;')">😯</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F62A;')">😪</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F62B')">😫</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F634')">😴</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F60C')">😌</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61B')">😛</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61C')">😜</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61D')">😝</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F924')">🤤</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F612')">😒</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F613')">😓</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F614')">😔</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F62B;')">😫</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F634;')">😴</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F60C;')">😌</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F61B;')">😛</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F61C;')">😜</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F61D;')">😝</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F924;')">🤤</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F612;')">😒</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F613;')">😓</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F614;')">😔</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F615')">😕</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F643')">🙃</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F911')">🤑</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F632')">😲</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x2639')">☹️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F641')">🙁</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F616')">😖</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61E')">😞</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61F')">😟</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F622')">😢</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F615;')">😕</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F643;')">🙃</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F911;')">🤑</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F632;')">😲</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('2639;')">☹️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F641;')">🙁</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F616;')">😖</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F61E;')">😞</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F61F;')">😟</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F622;')">😢</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F623')">😣</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F625')">😥</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F62E')">😮</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F910')">🤐</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F62F')">😯</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F62A')">😪</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F62B')">😫</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F634')">😴</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F60C')">😌</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61B')">😛</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F623;')">😣</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F625;')">😥</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F62E;')">😮</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F910;')">🤐</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F62F;')">😯</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F62A;')">😪</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F62B;')">😫</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F634;')">😴</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F60C;')">😌</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F61B;')">😛</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61C')">😜</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61D')">😝</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F924')">🤤</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F612')">😒</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F613')">😓</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F614')">😔</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F615')">😕</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F643')">🙃</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F911')">🤑</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F632')">😲</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F61C;')">😜</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F61D;')">😝</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F924;')">🤤</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F612;')">😒</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F613;')">😓</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F614;')">😔</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F615;')">😕</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F643;')">🙃</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F911;')">🤑</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F632;')">😲</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x2639')">☹️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F641')">🙁</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F616')">😖</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61E')">😞</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F61F')">😟</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F622')">😢</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F62D')">😭</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F630')">😰</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F631')">😱</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F633')">😳</button></td>
+    <td><button id="Click" onclick="copyToClipboard('2639;')">☹️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F641;')">🙁</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F616;')">😖</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F61E;')">😞</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F61F;')">😟</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F622;')">😢</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F62D;')">😭</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F630;')">😰</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F631;')">😱</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F633;')">😳</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F635')">😵</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F621')">😡</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F620')">😠</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F92C')">🤬</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F637')">😷</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F912')">🤒</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F915')">🤕</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F922')">🤢</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F92E')">🤮</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F927')">🤧</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F635;')">😵</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F621;')">😡</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F620;')">😠</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F92C;')">🤬</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F637;')">😷</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F912;')">🤒</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F915;')">🤕</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F922;')">🤢</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F92E;')">🤮</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F927;')">🤧</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F607')">😇</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F920')">🤠</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F921')">🤡</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F925')">🤥</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F92B')">🤫</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F92D')">🤭</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F9D0')">🧐</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F913')">🤓</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F608')">😈</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F47F')">👿</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F607;')">😇</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F920;')">🤠</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F921;')">🤡</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F925;')">🤥</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F92B;')">🤫</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F92D;')">🤭</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F9D0;')">🧐</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F913;')">🤓</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F608;')">😈</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F47F;')">👿</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F4A9')">💩</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F916')">🤖</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F47B')">👻</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F480')">💀</button></td> 
-    <td><button id="Click" onclick="copyToClipboard('&#x2620')">☠️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F47D')">👽</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F47E')">👾</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F916')">🤖</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F383')">🎃</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F93A')">🤺</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F4A9;')">💩</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F916;')">🤖</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F47B;')">👻</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F480;')">💀</button></td> 
+    <td><button id="Click" onclick="copyToClipboard('2620;')">☠️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F47D;')">👽</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F47E;')">👾</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F916;')">🤖</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F383;')">🎃</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F93A;')">🤺</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F938')">🤸‍♂️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F938')">🤸‍♀️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F93C')">🤼‍♂️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F93C')">🤼‍♀️</button></td> 
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3AD')">🎭</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3A8')">🎨</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3AC')">🎬</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3A4')">🎤</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3A7')">🎧</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3BC')">🎼</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F938;')">🤸‍♂️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F938;')">🤸‍♀️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F93C;')">🤼‍♂️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F93C;')">🤼‍♀️</button></td> 
+    <td><button id="Click" onclick="copyToClipboard('1F3AD;')">🎭</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3A8;')">🎨</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3AC;')">🎬</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3A4;')">🎤</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3A7;')">🎧</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3BC;')">🎼</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3B9')">🎹</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F941')">🥁</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3B7')">🎷</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3BA')">🎺</button></td> 
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3B8')">🎸</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3BB')">🎻</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3AE')">🎮</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F579')">🕹️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F3B0')">🎰</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F680')">🚀</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3B9;')">🎹</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F941;')">🥁</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3B7;')">🎷</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3BA;')">🎺</button></td> 
+    <td><button id="Click" onclick="copyToClipboard('1F3B8;')">🎸</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3BB;')">🎻</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3AE;')">🎮</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F579;')">🕹️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F3B0;')">🎰</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F680;')">🚀</button></td>
      </tr>
      <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F6F8')">🛸</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F6F0')">🛰️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F30D')">🌍</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F30E')">🌎</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F30F')">🌏</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F315')">🌕</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F316')">🌖</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F317')">🌗</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F318')">🌘</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F311')">🌑</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F6F8;')">🛸</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F6F0;')">🛰️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F30D;')">🌍</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F30E;')">🌎</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F30F;')">🌏</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F315;')">🌕</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F316;')">🌖</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F317;')">🌗</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F318;')">🌘</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F311;')">🌑</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F312')">🌒</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F313')">🌓</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F314')">🌔</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F31A')">🌚</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F31D')">🌝</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F31E')">🌞</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F31B')">🌛</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x2B50')">⭐</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F31F')">🌟</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F320')">🌠</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F312;')">🌒</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F313;')">🌓</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F314;')">🌔</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F31A;')">🌚</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F31D;')">🌝</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F31E;')">🌞</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F31B;')">🌛</button></td>
+    <td><button id="Click" onclick="copyToClipboard('2B50;')">⭐</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F31F;')">🌟</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F320;')">🌠</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F4AB')">💫</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x2728')">✨</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x2600')">☀️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F324')">🌤️</button></td> 
-    <td><button id="Click" onclick="copyToClipboard('&#x26C5')">⛅</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x2601')">☁️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F325')">🌥️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F326')">🌦️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F327')">🌧️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x26C8')">⛈️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F4AB;')">💫</button></td>
+    <td><button id="Click" onclick="copyToClipboard('2728;')">✨</button></td>
+    <td><button id="Click" onclick="copyToClipboard('2600;')">☀️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F324;')">🌤️</button></td> 
+    <td><button id="Click" onclick="copyToClipboard('26C5;')">⛅</button></td>
+    <td><button id="Click" onclick="copyToClipboard('2601;')">☁️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F325;')">🌥️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F326;')">🌦️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F327;')">🌧️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('26C8;')">⛈️</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F329')">🌩️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x26A1')">⚡</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F525')">🔥</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F4A5')">💥</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x2744')">❄️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F328')">🌨️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x2603')">☃️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x26C4')">⛄</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F32C')">🌬️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F4A8')">💨</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F329;')">🌩️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('26A1;')">⚡</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F525;')">🔥</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F4A5;')">💥</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('2744;')">❄️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F328;')">🌨️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('2603;')">☃️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('26C4;')">⛄</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F32C;')">🌬️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F4A8;')">💨</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F32A')">🌪️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F32B')">🌫️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F308')">🌈</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x2602')">☂️</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x2614')">☔</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x26F1')">⛱️</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F30A')">🌊</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F34F')">🍏</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F34E')">🍎</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F350')">🍐</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F32A;')">🌪️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F32B;')">🌫️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F308;')">🌈</button></td>
+    <td><button id="Click" onclick="copyToClipboard('2602;')">☂️</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('2614;')">☔</button></td>
+    <td><button id="Click" onclick="copyToClipboard('26F1;')">⛱️</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F30A;')">🌊</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F34F;')">🍏</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F34E;')">🍎</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F350;')">🍐</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F34A')">🍊</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F34B')">🍋</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F34C')">🍌</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F349')">🍉</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F347')">🍇</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F353')">🍓</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F348')">🍈</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F352')">🍒</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F351')">🍑</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F95D')">🥝</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F34A;')">🍊</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F34B;')">🍋</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F34C;')">🍌</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F349;')">🍉</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F347;')">🍇</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F353;')">🍓</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F348;')">🍈</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F352;')">🍒</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F351;')">🍑</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F95D;')">🥝</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F34D')">🍍</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F96D')">🥭</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F965')">🥥</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F96C')">🥬</button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x1F966')">🥦</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F952')">🥒</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F33D')">🌽</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F955')">🥕</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F954')">🥔</button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x1F360')">🍠</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F34D;')">🍍</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F96D;')">🥭</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F965;')">🥥</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F96C;')">🥬</button></td>  
+    <td><button id="Click" onclick="copyToClipboard('1F966;')">🥦</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F952;')">🥒</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F33D;')">🌽</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F955;')">🥕</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F954;')">🥔</button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F360;')">🍠</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F35E;')">🍞</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F35F;')">🍟</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F360;')">🍠</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F361;')">🍡</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F362;')">🍢</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F363;')">🍣</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F364;')">🍤</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F365;')">🍥</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F366;')">🍦</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F367;')">🍧</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F368;')">🍨</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F369;')">🍩</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F36A;')">🍪</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F36B;')">🍫</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F36C;')">🍬</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F36D;')">🍭</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F36E;')">🍮</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F36F;')">🍯</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F370;')">🍰</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F371;')">🍱</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F372;')">🍲</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F373;')">🍳</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F374;')">🍴</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F375;')">🍵</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F376;')">🍶</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F377;')">🍷</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F378;')">🍸</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F379;')">🍹</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F37A;')">🍺</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F37B;')">🍻</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F37C;')">🍼</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F37D;')">🍽️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F37E;')">🍾</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F37F;')">🍿</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F380;')">🎀</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F381;')">🎁</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F382;')">🎂</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F383;')">🎃</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F384;')">🎄</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F385;')">🎅</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F386;')">🎆</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F387;')">🎇</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F388;')">🎈</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F389;')">🎉</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F38A;')">🎊</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F38B;')">🎋</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F38C;')">🎌</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F38D;')">🎍</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F38E;')">🎎</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F38F;')">🎏</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F390;')">🎐</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F391;')">🎑</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F392;')">🎒</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F393;')">🎓</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3B6;')">🎶</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3B5;')">🎵</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F396;')">🎖️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F397;')">🎗️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3B7;')">🎷</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F399;')">🎙️</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
+    <td><button id="Click" onclick="copyToClipboard('1F39A;')">🎚️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F39B;')">🎛️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3B3;')">🎳</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3B1;')">🎱</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F39E;')">🎞️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F39F;')">🎟️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3A0;')">🎠</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3A1;')">🎡</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3A2;')">🎢</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3A3;')">🎣</button></td>
      </tr>
     <tr>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>  
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
-    <td><button id="Click" onclick="copyToClipboard('&#x')"></button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3C2;')">🏂</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3C3;')">🏃</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3C4;')">🏄</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3C5;')">🏅</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3C6;')">🏆</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3C7;')">🏇</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3C8;')">🏈</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3C9;')">🏉</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3CA;')">🏊</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3CB;')">🏋️</button></td>
      </tr>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F3CC;')">🏌️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3CD;')">🏍️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3CE;')">🏎️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3CF;')">🏏</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3D0;')">🏐</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3D1;')">🏑</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3D2;')">🏒</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3D3;')">🏓</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3D4;')">🏔️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3D5;')">🏕️</button></td>
+     </tr>
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F3D6;')">🏖️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3D7;')">🏗️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3D8;')">🏘️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3D9;')">🏙️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3DA;')">🏚️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3DB;')">🏛️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3DC;')">🏜️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3DD;')">🏝️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3DE;')">🏞️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3DF;')">🏟️</button></td>
+     </tr>
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F3E0;')">🏠</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3E1;')">🏡</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3E2;')">🏢</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3E3;')">🏣</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3E4;')">🏤</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3E5;')">🏥</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3E6;')">🏦</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3E7;')">🏧</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3E8;')">🏨</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3E9;')">🏩</button></td>
+     </tr>
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F3EA;')">🏪</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3EB;')">🏫</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3EC;')">🏬</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3ED;')">🏭</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3EE;')">🏮</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3EF;')">🏯</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3F0;')">🏰</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3F3;')">🏳️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3F4;')">🏴</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3F5;')">🏵️</button></td>
+     </tr>
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F3F7;')">🏷️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3F8;')">🏸</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3F9;')">🏹</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3FA;')">🏺</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3FB;')">🏻</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3FC;')">🏼</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3FD;')">🏽</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3FE;')">🏾</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F3FF;')">🏿</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F400;')">🐀</button></td>
+     </tr>
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F401;')">🐁</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F402;')">🐂</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F403;')">🐃</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F404;')">🐄</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F405;')">🐅</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F406;')">🐆</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F407;')">🐇</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F408;')">🐈</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F409;')">🐉</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F40A;')">🐊</button></td>
+     </tr>
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F40B;')">🐋</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F40C;')">🐌</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F40D;')">🐍</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F40E;')">🐎</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F40F;')">🐏</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F410;')">🐐</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F411;')">🐑</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F412;')">🐒</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F413;')">🐓</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F414;')">🐔</button></td>
+     </tr>
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F415;')">🐕</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F416;')">🐖</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F417;')">🐗</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F418;')">🐘</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F419;')">🐙</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F41A;')">🐚</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F41B;')">🐛</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F41C;')">🐜</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F41D;')">🐝</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F41E;')">🐞</button></td>
+     </tr>
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F41F;')">🐟</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F420;')">🐠</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F421;')">🐡</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F422;')">🐢</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F423;')">🐣</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F424;')">🐤</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F425;')">🐥</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F426;')">🐦</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F427;')">🐧</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F428;')">🐨</button></td>
+     </tr>
+    <tr>
+      <td><button id="Click" onclick="copyToClipboard('1F428;')">🐨</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F429;')">🐩</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F42A;')">🐪</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F42B;')">🐫</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F42C;')">🐬</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F42D;')">🐭</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F42E;')">🐮</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F42F;')">🐯</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F430;')">🐰</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F431;')">🐱</button></td>
+     </tr>
+    <tr>
+    <td><button id="Click" onclick="copyToClipboard('1F432;')">🐲</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F433;')">🐳</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F434;')">🐴</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F435;')">🐵</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F436;')">🐶</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F437;')">🐷</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F438;')">🐸</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F439;')">🐹</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F43A;')">🐺</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F43B;')">🐻</button></td>
+     </tr>
+    <tr>
+      <td><button id="Click" onclick="copyToClipboard('1F43C;')">🐼</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F43D;')">🐽</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F43E;')">🐾</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F440;')">👀</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F441;')">👁️</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F442;')">👂</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F443;')">👃</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F444;')">👄</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F445;')">👅</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F446;')">👆</button></td>
+     </tr>
+    <tr>
+      <td><button id="Click" onclick="copyToClipboard('1F447;')">👇</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F448;')">👈</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F449;')">👉</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F44A;')">👊</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F44B;')">👋</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F44C;')">👌</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F44D;')">👍</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F44E;')">👎</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F44F;')">👏</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F450;')">👐</button></td>
+     </tr>
+    <tr>
+      <td><button id="Click" onclick="copyToClipboard('1F451;')">👑</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F452;')">👒</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F453;')">👓</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F454;')">👔</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F455;')">👕</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F456;')">👖</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F457;')">👗</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F458;')">👘</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F459;')">👙</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F45A;')">👚</button></td>
+
+     </tr>
+    <tr>
+      
+<td><button id="Click" onclick="copyToClipboard('1F45B;')">👛</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F45C;')">👜</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F45D;')">👝</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F45E;')">👞</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F45F;')">👟</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F460;')">👠</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F461;')">👡</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F462;')">👢</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F463;')">👣</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F464;')">👤</button></td>
+     </tr>
+    <tr>
+      <td><button id="Click" onclick="copyToClipboard('1F465')">👥</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F466;')">👦</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F467;')">👧</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F468;')">👨</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F469;')">👩</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F46A;')">👪</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F46B;')">👫</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F46C;')">👬</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F46D;')">👭</button></td>
+<td><button id="Click" onclick="copyToClipboard('1F46E;')">👮</button></td>
+</tr>
+
   </tbody>
 </table>
 
