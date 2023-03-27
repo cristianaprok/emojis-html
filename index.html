@@ -40,8 +40,6 @@ transition: all 0.3s ease-in-out;
   box-shadow: 0px 8px 8px rgba(0,0,0,0.3); /* Cambio de sombra al pasar el mouse */
 }
 
-
-
       #message {
         position: fixed;
         top: 20px;
@@ -55,8 +53,6 @@ transition: all 0.3s ease-in-out;
         display: none;
       }
       
-
-
 
  .responsive-table {
   width: 100%;
@@ -87,6 +83,40 @@ transition: all 0.3s ease-in-out;
   }
 }
 
+nav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex; /* Convierte la barra de navegación en un elemento flexbox */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  font-weight: bold; /* Cambia la fuente a negrita */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; /* Convierte la lista en un elemento flexbox */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #111;
+}
+
+
     </style>
 
     <script>
@@ -104,7 +134,14 @@ transition: all 0.3s ease-in-out;
   </head>
   <body>
     
-    
+    <nav>
+  <ul>
+    <li><a href="#">Emojis</a></li>
+    <li><a href="#">EnSticker</a></li>
+    <li><a href="#">EnDigitalUY</a></li>
+  </ul>
+</nav>
+
     <table class="responsive-table">
   <tbody>
    <tr>
