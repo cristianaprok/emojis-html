@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tabla con botones copiar al portapapeles</title>
+    <style>
+      #tabla-container {
+        overflow-x: auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #ccc;
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+      }
+      #message {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #007bff;
+        color: #fff;
+        padding: 16px;
+        border-radius: 4px;
+        z-index: 999;
+        display: none;
+      }
+      
+      .responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.responsive-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.responsive-table button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .responsive-table {
+    overflow-x: auto;
+  }
+  .responsive-table td {
+    white-space: nowrap;
+  }
+}
+
+    </style>
+
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text);
+        var message = document.getElementById("message");
+        message.innerHTML = "Texto copiado: " + text;
+        message.style.display = "block";
+        setTimeout(function() {
+          message.style.display = "none";
+        }, 3000);
+      }
+    </script>
+    
+  </head>
+  <body>
+    
+    
+    <table class="responsive-table">
+  <tbody>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="copyToClipboard('Texto 1')">Botón 1</button></td>
+      <td><button onclick="copyToClipboard('Texto 2')">Botón 2</button></td>
+      <td><button onclick="copyToClipboard('Texto 3')">Botón 3</button></td>
+      <td><button onclick="copyToClipboard('Texto 4')">Botón 4</button></td>
+      <td><button onclick="copyToClipboard('Texto 5')">Botón 5</button></td>
+      <td><button onclick="copyToClipboard('Texto 6')">Botón 6</button></td>
+      <td><button onclick="copyToClipboard('Texto 7')">Botón 7</button></td>
+      <td><button onclick="copyToClipboard('Texto 8')">Botón 8</button></td>
+      <td><button onclick="copyToClipboard('Texto 9')">Botón 9</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="message"></div>
+
+    
+  </body>
+</html>
